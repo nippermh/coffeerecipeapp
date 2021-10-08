@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Coffee Recipe App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row m-4">
+                <h1 class="primary display-4">Coffee Brew Recipes</h1>
+                <p class="fs-5 text-muted">Add custom recipes for your home brews below.</p>
+            </div>
+        </div>
+
+        <main>
+            <div class="container">
+                <form action="" id="recipe-form" class="p-4 row shadow-sm rounded-3 border border-primary">
+                    <div class="form-group col-md-4 my-2">
+                        <label for="name">Name of Recipe</label>
+                        <input type="text" required autocomplete="off" id="name" class="form-control" placeholder="e.g. Morning Brew">
+                    </div>
+                    <div class="form-group col-md-4 my-2">
+                        <label for="name">Brew Method</label>
+                        <input type="text" required autocomplete="off" id="method" class="form-control" placeholder="e.g. v60 pour over">
+                    </div>
+                    <div class="form-group col-md-4 my-2">
+                        <label for="name">Roast</label>
+                        <input type="text" required autocomplete="off" id="roast" class="form-control" placeholder="e.g. full city">
+                    </div>
+                    <div class="form-group col-md-4 my-2">
+                        <label for="name">Grind size</label>
+                        <input type="text" required autocomplete="off" id="grind" class="form-control" placeholder="e.g. 30">
+                    </div>
+
+                    <div class="form-group col-md-4 my-2">
+                        <label for="name">Ratio</label>
+                        <input type="text" required autocomplete="off" id="ratio" class="form-control" placeholder="e.g. 1:16">
+                    </div>
+
+                    <div class="form-group col-md-4 my-2">
+                        <label for="name">Notes (optional)</label>
+                        <input type="text" autocomplete="off" id="notes" class="form-control" placeholder="e.g. your notes">
+                    </div>
+                    <div class="form-group mt-4">
+                        <input type="submit" value="Add Recipe" class="btn btn-primary">
+                    </div>
+
+                </form>
+
+                <div class="container">
+                    <div class="row m-4 border-bottom border-3 border-primary">
+                        <p class="h3 text-primary">Saved Recipes</p>
+
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 mx-4 my-4 text-center" id="recipe-container">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <p class="m-5">this is the tutorial dude: https://morioh.com/p/4eeb645069bc?f=5c21fb01c16e2556b555ab32&fbclid=IwAR0DV2PvVUNKZXAJaeMFnygvNuEVwjhqZmXevD-yFUS9nvq0p0BlMtX7EsM</p>
+        <script src="./app.js" defer></script>
+    </body>
+</html>
